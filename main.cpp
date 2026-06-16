@@ -1,6 +1,6 @@
 #include <iostream>
 #include <locale.h>
-#include "src/paciente.h"
+#include "paciente.h"
 using namespace std;
 
 void Iniciar_programa();
@@ -20,10 +20,10 @@ void Iniciar_programa()
         switch (opcao)
     {
     case 1:
+        principal();
         //cadastro de paciente
         break;
     case 2:
-        principal();
         break;
     default:
         cout << "\nOpção invalida! Digite novamente...\n";
