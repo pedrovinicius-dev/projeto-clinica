@@ -1,6 +1,3 @@
-#include <iostream>
-#include <locale.h>
-#include "Paciente.h"
 #include "Sistema.h"
 using namespace std;
 

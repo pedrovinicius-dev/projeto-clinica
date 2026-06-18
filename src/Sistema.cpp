@@ -1,5 +1,6 @@
 #include "Sistema.h"
 #include "Paciente.h"
+#include "Fila.h"
 
 
 void IniciarClinicaEAJ() //função para iniciar o projeto na main
@@ -23,7 +24,7 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             //Chamar proximo paciente
             break;
         case 3:
-            //Visualizar fila
+            VisualizarFila();
             break;
         case 4:
             //Pesquisar paciente

@@ -5,6 +5,7 @@
 #include <vector>
 #include <locale.h>
 #include "Paciente.h"
+#include "Fila.h"
 using namespace std;
 
 void IniciarClinicaEAJ();
