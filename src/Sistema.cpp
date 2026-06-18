@@ -1,6 +1,7 @@
 ﻿#include "Sistema.h"
 #include "Paciente.h"
 #include "Fila.h"
+using namespace std;
 
 
 void IniciarClinicaEAJ() //função para iniciar o projeto na main

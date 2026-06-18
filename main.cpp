@@ -14,5 +14,7 @@ int main()
     IniciarClinicaEAJ();
 }
 
-
+//Ainda falta >
+//> Persistência de Arquivos
+//> Algoritmos de Ordenação, Busca e Recursividade
     

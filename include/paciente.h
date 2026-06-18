@@ -4,7 +4,6 @@
 #include <iostream>
 #include <string>
 #include <vector>
-using namespace std;
 
 void CadastrarPaciente();
 void PerguntarMedico(); 
@@ -18,7 +17,9 @@ struct Paciente
   bool Paciente_prioritario;
 };
 
-extern vector<Paciente> ListaGeral;
-extern vector<Paciente> FilaEspera;
+//Vector globais
+extern vector<Paciente> ListaGeral; //Vai guardar todos os pacientes do sistema
+extern vector<Paciente> FilaEspera; //Entra aqui quando o paciente e cadastrado, quando ele for chamado (op2), ele é removido da fila
+
 
 #endif

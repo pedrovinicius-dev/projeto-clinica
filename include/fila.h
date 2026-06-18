@@ -1,8 +1,7 @@
 #ifndef FILA_H
 #define FILA_H
 
-#include "Sistema.h"
-
+#include "paciente.h" //Para fila reconhecer os pacientes
 void VisualizarFila();
 
 #endif

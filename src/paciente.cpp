@@ -1,4 +1,6 @@
 #include "Paciente.h"
+using namespace std;
+
 
 vector<Paciente> ListaGeral;
 vector<Paciente> FilaEspera;
