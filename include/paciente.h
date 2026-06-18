@@ -1,8 +1,16 @@
+#ifndef PACIENTE_H
+#define PACIENTE_H
 
-//Outras partes do sistema tambem vão precisar conhecer um paciente
+#include <iostream>
+#include <string>
+using namespace std;
+
 struct Paciente
 {
-  string nome;
-  int idade;
-  bool prioridade;
+  string Nome;
+  int Idade;
+  int OpcaoMedico;
+  bool Paciente_prioritario;
 };
+
+#endif
