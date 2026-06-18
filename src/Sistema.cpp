@@ -3,6 +3,7 @@
 #include "Fila.h"
 using namespace std;
 
+vector<Paciente> FilaEspera;
 
 void IniciarClinicaEAJ() //função para iniciar o projeto na main
 {
@@ -52,4 +53,23 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
     } while (opcao != 0);
         cout << "\n\nProjeto desenvolvido por: Andinho & Vini7";
     
+}
+
+void ChamarProximo()
+{
+    cout << "\n==============================\n\tPAINEL DE CHAMADA\n==============================\n\n";
+    if (FilaEspera.empty()) //Verifica se o vetor está vazio
+    {
+        cout << "Não há pacientes aguardando.\n";
+        return; //Retorna para função de inicio
+    }
+    else
+    {
+        for (int i = 0; i < FilaEspera.size(); i++)
+        {
+            cout << "PACIENTE: " << FilaEspera[0].Nome << endl << endl;
+            cout << "MÉDICO: " << FilaEspera[0].OpcaoMedico << endl << endl;
+        }
+        
+    }
 }
