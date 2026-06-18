@@ -4,23 +4,24 @@
 #include <iostream>
 #include <string>
 #include <vector>
-using namespace std;
 
-void CadastrarPaciente();
-void PerguntarMedico(); 
-void PerguntarPrioridade();
 
 struct Paciente
 {
-  string Nome;
+  std::string Nome;
   int Idade;
   int OpcaoMedico;
   bool Paciente_prioritario;
 };
 
+
+void CadastrarPaciente();
+void PerguntarMedico(); 
+void PerguntarPrioridade();
+
 //Vector globais
-extern vector<Paciente> ListaGeral; //Vai guardar todos os pacientes do sistema
-extern vector<Paciente> FilaEspera; //Entra aqui quando o paciente e cadastrado, quando ele for chamado (op2), ele é removido da fila
+extern std::vector<Paciente> ListaGeral; //Vai guardar todos os pacientes do sistema
+extern std::vector<Paciente> FilaEspera; //Entra aqui quando o paciente e cadastrado, quando ele for chamado (op2), ele é removido da fila
 
 
 #endif

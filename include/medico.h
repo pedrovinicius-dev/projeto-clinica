@@ -2,9 +2,9 @@
 #define MEDICO_H
 
 #include <string>
-using namespace std;
 
-string NomeMedico(int opcao);
+
+std::string NomeMedico(int opcao);
 int NumeroSala(int OpcaoMedico);
 
 #endif
