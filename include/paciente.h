@@ -3,7 +3,11 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
+
+extern vector<Paciente> ListaGeral;
+extern vector<Paciente> FilaEspera;
 
 struct Paciente
 {

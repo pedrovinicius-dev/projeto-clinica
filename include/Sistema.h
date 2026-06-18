@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <locale.h>
-#include "paciente.h"
+#include "Paciente.h"
 using namespace std;
 
 //Vector globais

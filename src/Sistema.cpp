@@ -1,4 +1,5 @@
 #include "Sistema.h"
+#include "Paciente.h"
 
 vector<Paciente> ListaGeral;
 vector<Paciente> FilaEspera;
