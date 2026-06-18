@@ -20,3 +20,18 @@ void CadastrarPaciente()   // Função de cadastrar paciente para o caso 1
 
   cout << "\n\nPaciente cadastrado com sucesso!\n";
 }
+
+void PerguntarMedico()
+{
+  int opcao = 0;
+
+  while(opcao < 1 || opcao > 4)
+  {
+    cout << "\n\nMédico: \n1 - Cardiologista\n2 - Clínico geral\n3 - Pediatra\n4 - Ortopedista\n\nEscolha uma opção: > ";
+    cin >> opcao;
+
+    if(opcao < 1 || opcao > 4) cout << "\nDigite uma opção valida!\nTente novamente...\n"; //Tratamento para escolha correta
+  }
+  CadastroPaciente.OpcaoMedico = opcao; //A opção de meedico escolhida vai para struct
+  return; //Vai retornar para a função de cadastrar paciente
+}
