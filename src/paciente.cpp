@@ -6,29 +6,24 @@
 
 using namespace std;
 
-struct paciente
-{
-  string nome;
-  int idade;
-  bool prioridade;
-};
+vector<Paciente> lista; // Guarda as informaçoes dos pacientes //Vetor global
 
-void principal()
+void Cadastro_paciente()
 {
   setlocale(LC_ALL, "pt_BR.UTF-8");
-  string name;
-  int age, N, prioridade_inteira; // N = numeros de paciente
+  string nome_paciente;
+  int idade_paciente, N, prioridade_inteira; // N = numeros de paciente
   bool priority;
   cout << "\n===========================================\n\tCADASTRO DE PACIENTE\n===========================================\n\nDigite a quantidade de pacientes: > ";
   cin >> N; // Ler numeros de paciente
 
-  vector<paciente> lista; // Guarda as informaçoes dos pacientes
   for (int i = 0; i < N; i++)
   {
     cout << "Nome:";
-    cin >> name;
+    cin.ignore();
+    getline(cin, nome_paciente);
     cout << "Idade:";
-    cin >> age;
+    cin >> idade_paciente;
     cout << "Possui prioridade?\n1 - Sim\n2 - Não\n";
     cin >> prioridade_inteira;
 
@@ -39,10 +34,10 @@ void principal()
     {
       priority = false;
     }
-    paciente N;
+    Paciente N;
     N.prioridade = priority;
-    N.nome = name;
-    N.idade = age;
+    N.nome = nome_paciente;
+    N.idade = idade_paciente;
     lista.push_back(N);
   }
 
