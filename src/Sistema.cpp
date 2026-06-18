@@ -63,13 +63,5 @@ void ChamarProximo()
         cout << "Não há pacientes aguardando.\n";
         return; //Retorna para função de inicio
     }
-    else
-    {
-        for (int i = 0; i < FilaEspera.size(); i++)
-        {
-            cout << "PACIENTE: " << FilaEspera[0].Nome << endl << endl;
-            cout << "MÉDICO: " << FilaEspera[0].OpcaoMedico << endl << endl;
-        }
-        
-    }
+    
 }
