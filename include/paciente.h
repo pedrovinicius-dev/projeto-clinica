@@ -6,8 +6,9 @@
 #include <vector>
 using namespace std;
 
-extern vector<Paciente> ListaGeral;
-extern vector<Paciente> FilaEspera;
+void CadastrarPaciente();
+void PerguntarMedico(); 
+void PerguntarPrioridade();
 
 struct Paciente
 {
@@ -16,5 +17,8 @@ struct Paciente
   int OpcaoMedico;
   bool Paciente_prioritario;
 };
+
+extern vector<Paciente> ListaGeral;
+extern vector<Paciente> FilaEspera;
 
 #endif

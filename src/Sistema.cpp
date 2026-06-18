@@ -1,8 +1,6 @@
 #include "Sistema.h"
 #include "Paciente.h"
 
-vector<Paciente> ListaGeral;
-vector<Paciente> FilaEspera;
 
 void IniciarClinicaEAJ() //função para iniciar o projeto na main
 {
@@ -19,7 +17,7 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
         switch (opcao)
         {
         case 1:
-            //Cadastrar paciente
+            CadastrarPaciente();
             break;
         case 2:
             //Chamar proximo paciente
