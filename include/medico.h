@@ -5,4 +5,6 @@
 using namespace std;
 
 string NomeMedico(int opcao);
+int NumeroSala(int OpcaoMedico);
+
 #endif

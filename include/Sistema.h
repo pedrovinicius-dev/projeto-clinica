@@ -8,5 +8,5 @@
 #include "Fila.h"
 
 void IniciarClinicaEAJ();
-
+void ChamarProximo();
 #endif

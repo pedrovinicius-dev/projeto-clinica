@@ -16,4 +16,20 @@ string NomeMedico(int opcao) //Função que retorna uma opcao em nome do médico
         return "Médico não encontrado";
     }
 }
-
+//Ambas as funçoes vao saber qual tem que ser, a partir da variavel da OpcaoMedico da struct Paciente
+int NumeroSala(int opcao) //Função para a escolha da sala
+{
+    switch (opcao)
+    {
+    case 1:
+        return 101;
+    case 2:
+        return 102;
+    case 3:
+        return 103;
+    case 4:
+        return 104;
+    default:
+        return 0;
+    }
+}
