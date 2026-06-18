@@ -1,4 +1,4 @@
-#include "Sistema.h"
+﻿#include "Sistema.h"
 #include "Paciente.h"
 #include "Fila.h"
 
