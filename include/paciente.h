@@ -23,6 +23,6 @@ void PerguntarPrioridade();
 //para poderem ser usados em outros arquivos cpp, se tornando globais
 extern std::vector<Paciente> ListaGeral; //Vai guardar todos os pacientes do sistema
 extern std::vector<Paciente> FilaEspera; //Entra aqui quando o paciente e cadastrado, quando ele for chamado (op2), ele é removido da fila
-
+extern std::vector<Paciente> FilaPrioritaria;//fila dos idosos separada
 
 #endif
