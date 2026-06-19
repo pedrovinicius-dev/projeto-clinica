@@ -1,5 +1,4 @@
 ﻿#include "Sistema.h"
-#include "Medico.h"
 #include "Paciente.h"
 #include "Fila.h"
 using namespace std;
@@ -54,21 +53,3 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
     
 }
 
-void ChamarProximo()
-{
-    cout << "\n==============================\n\tPAINEL DE CHAMADA\n==============================\n\n";
-    if (FilaEspera.empty()) //Verifica se o vetor está vazio
-    {
-        cout << "Não há pacientes aguardando.\n";
-        return; //Retorna para função de inicio
-    }
-    else
-    {
-        cout << "PACIENTE: " << FilaEspera[0].Nome << endl << endl;
-        cout << "MEDICO: " << NomeMedico(FilaEspera[0].OpcaoMedico) << endl << endl;
-        cout << "SALA: " << NumeroSala(FilaEspera[0].OpcaoMedico);
-        FilaEspera.erase(FilaEspera.begin()); //Aqui foi papo de ficar calvo com o stress q passei...obs: anderson aqui
-        //ex: Paciente -> OpcaoMedico -> 3
-        //              -> NomeMedico(3) "Pediatra"
-    }   //              -> NumeroSala(3) 103
-}

@@ -1,7 +1,7 @@
 #include "Sistema.h"
 #include <locale.h>
 #include <windows.h>
-#include "Sistema.h"
+
 using namespace std;
 
 

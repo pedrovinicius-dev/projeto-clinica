@@ -5,7 +5,7 @@ using namespace std;
 vector<Paciente> ListaGeral;
 vector<Paciente> FilaEspera;
 
-Paciente CadastroPaciente; // Struct
+Paciente CadastroPaciente; // Struct Cadastro Paciente, "Paciente" é como se fosse o tipo da variavel e "cadastropaciente"seria a variavel
 void CadastrarPaciente()   // Função de cadastrar paciente para o caso 1
 {
   int opcao;
@@ -55,6 +55,7 @@ void PerguntarPrioridade()
   {
     CadastroPaciente.Paciente_prioritario = true;
     FilaEspera.insert(FilaEspera.begin(), CadastroPaciente); // Vai colocar o paciente prioritario no inicio da fila(begin)
+  //erro aqui, quem for prioritario fura fila, mesmo dos prioritarios
   }
   if (opcao == 2)
   {
