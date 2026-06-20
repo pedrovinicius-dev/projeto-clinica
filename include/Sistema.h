@@ -9,4 +9,5 @@
 
 void IniciarClinicaEAJ();
 void ChamarProximo();
+
 #endif
