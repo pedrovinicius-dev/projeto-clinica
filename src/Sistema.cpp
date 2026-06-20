@@ -1,6 +1,7 @@
 ﻿#include "Sistema.h"
 #include "Paciente.h"
 #include "Fila.h"
+#include "busca.h"
 using namespace std;
 
 void IniciarClinicaEAJ() //função para iniciar o projeto na main
@@ -27,7 +28,7 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             VisualizarFila();
             break;
         case 4:
-            //Pesquisar paciente
+            BuscarPaciente();
             break;
         case 5:
             //Listar pacientes

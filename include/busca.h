@@ -6,4 +6,6 @@
 #include <vector>
 #include "paciente.h"
 
+void BuscarPaciente();
+
 #endif

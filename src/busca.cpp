@@ -1,8 +1,8 @@
 #include "Busca.h"
 #include "medico.h"
+#include "paciente.h"
 using namespace std;
 
-vector<Paciente> ListaGeral;
 
 void BuscarPaciente()
 {
