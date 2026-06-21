@@ -1,6 +1,6 @@
 #include "Medico.h"
 using namespace std;
-string NomeMedico(int opcao) //Função que retorna uma opcao em nome do médico
+string NomeMedico(int opcao) //Função que retorna uma opcao int em nome do médico
 {
     switch (opcao)
     {

@@ -53,7 +53,8 @@ void ListarPacientes()
         {
             cout << i + 1 << " - " << ListaGeral[i].Nome << endl;
             cout << "Idade: " << ListaGeral[i].Idade << endl;
-            cout << "Especialidade: " << ListaGeral[i].OpcaoMedico << endl;
+            cout << "Especialidade: " << NomeMedico(ListaGeral[i].OpcaoMedico);
+            cout << "\n\n";
         }
     }
     

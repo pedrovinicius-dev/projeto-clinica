@@ -27,7 +27,7 @@ void VisualizarFila() // funçaõ do caso 3 que mostra a fila de espera atual
 
         if (!FilaEspera.empty())
         { // se a fila geral tiver alguem ele faz:
-            cout << "\n            " << "GERAL" << "          \n\n";
+            cout << "\n            " << "NÃO PRIORITÁRIOS" << "          \n\n";
 
             for (int i = 0; i < FilaEspera.size(); i++) //.size mostra o conteudo do vetor, no caso a struct paciente
             {
