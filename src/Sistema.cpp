@@ -9,6 +9,7 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
     setlocale(LC_ALL, "pt_BR.UTF-8"); //Usar acentuação
 
     int opcao;
+    bool sair = false; //O loop do menu depende dessa variavel q se inicia sendo false
 
     do
     {
@@ -43,13 +44,24 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             //Carregar dados
             break;
         case 0:
-            
+            char confirmação;
+            cout << "\nTem certeza que deseja sair? (s/n): ";
+            cin >> confirmação;
+            if (confirmação == 'S' || confirmação == 's') //se o usuario digitar sim a variavel e true 
+            {
+                sair = true;
+            }
+            else
+            {
+                cout << "Operação cancelada.\n";
+                break;
+            }
             break;
         default:
             cout << "\nDigite uma opção valida!\nTente novamente...";
             break;
         }
-    } while (opcao != 0);
-        cout << "\n\nProjeto desenvolvido por: Andinho & Vini7";
+    } while (!sair); //e sendo true vai encerrar o loop
+        cout << "Encerrando o sistema...\nObrigado por utilizar a Clinica EAJ.\n\nProjeto desenvolvido por: Andinho & Vini7";
     
 }
