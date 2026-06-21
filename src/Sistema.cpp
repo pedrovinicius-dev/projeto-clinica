@@ -43,7 +43,7 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             //Carregar dados
             break;
         case 0:
-            //Sair
+            
             break;
         default:
             cout << "\nDigite uma opção valida!\nTente novamente...";
@@ -53,4 +53,3 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
         cout << "\n\nProjeto desenvolvido por: Andinho & Vini7";
     
 }
-
