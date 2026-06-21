@@ -32,7 +32,7 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             BuscarPaciente();
             break;
         case 5:
-            //Listar pacientes
+            ListarPacientes();
             break;
         case 6:
             //Relatorio por medico

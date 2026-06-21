@@ -7,5 +7,6 @@
 #include "paciente.h"
 
 void BuscarPaciente(); //função 4 para buscar os pacientes
+void ListarPacientes(); //função 5 para listar todos os pacientes
 
 #endif

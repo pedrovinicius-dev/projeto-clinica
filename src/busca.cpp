@@ -39,3 +39,22 @@ void BuscarPaciente()
         cout << "\nPaciente não encontrado!\n";
     }
 }
+void ListarPacientes()
+{
+    cout << "\n==============================\n\tLISTA DE PACIENTES\n==============================\n\n";
+    if (ListaGeral.empty()) //Verifica se a lista está vazia 
+    {
+        cout << "Não há pacientes cadastrado.\n";
+        return; // SAi da função
+    }
+    else
+    {
+        for (int i = 0; i < ListaGeral.size(); i++)
+        {
+            cout << i + 1 << " - " << ListaGeral[i].Nome << endl;
+            cout << "Idade: " << ListaGeral[i].Idade << endl;
+            cout << "Especialidade: " << ListaGeral[i].OpcaoMedico << endl;
+        }
+    }
+    
+}
