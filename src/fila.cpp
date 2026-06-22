@@ -20,19 +20,19 @@ void VisualizarFila() // funçaõ do caso 3 que mostra a fila de espera atual
             for (int i = 0; i < FilaPrioritaria.size(); i++)
             {
 
-                cout << i + 1 << " - " << "Nome: " << FilaPrioritaria[i].Nome << " | Idade: " << FilaPrioritaria[i].Idade << "\n";
+                cout << i + 1 << " - " << "Nome: " << FilaPrioritaria[i].Nome << "\nIdade: " << FilaPrioritaria[i].Idade << "\n";
                 cout << "==============================\n";
             }
         }
 
         if (!FilaEspera.empty())
         { // se a fila geral tiver alguem ele faz:
-            cout << "\n            " << "NÃO PRIORITÁRIOS" << "          \n\n";
+            cout << "\n       " << "NÃO PRIORITÁRIOS" << "          \n\n";
 
             for (int i = 0; i < FilaEspera.size(); i++) //.size mostra o conteudo do vetor, no caso a struct paciente
             {
 
-                cout << i + 1 << " - " << "Nome: " << FilaEspera[i].Nome << " | Idade: " << FilaEspera[i].Idade << "\n"; // chamada pelos atributos .nome e .idade
+                cout << i + 1 << " - " << "Nome: " << FilaEspera[i].Nome << "\nIdade: " << FilaEspera[i].Idade << "\n"; // chamada pelos atributos .nome e .idade
                 cout << "==============================\n";
                 /*if (FilaEspera[i].Paciente_prioritario == true)
                 {
