@@ -16,7 +16,10 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
         cout << "\n==============================\n\tCLÍNICA EAJ\n==============================\n\n1 - Cadastrar paciente\n2 - Chamar próximo paciente\n3 - Visualizar fila\n4 - Pesquisar paciente\n5 - Listar pacientes\n6 - Relatório por médico\n7 - Salvar dados\n8 - Carregar dados\n0 - Sair\n\nEscolha uma opção: > ";
 
         cin >> opcao;
-
+        if (cin.fail()) { 
+        cin.clear();  cin.ignore(10000, '\n'); // <-- AS DUAS LINHAS MILAGROSAS
+        opcao =-1;
+        }
         switch (opcao)
         {
         case 1:
