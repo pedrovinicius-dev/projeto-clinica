@@ -2,6 +2,7 @@
 #include "Paciente.h"
 #include "Fila.h"
 #include "busca.h"
+#include "Medico.h"
 using namespace std;
 
 void IniciarClinicaEAJ() //função para iniciar o projeto na main
@@ -10,7 +11,6 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
 
     int opcao;
     bool sair = false; //O loop do menu depende dessa variavel q se inicia sendo false
-
     do
     {
         cout << "\n==============================\n\tCLÍNICA EAJ\n==============================\n\n1 - Cadastrar paciente\n2 - Chamar próximo paciente\n3 - Visualizar fila\n4 - Pesquisar paciente\n5 - Listar pacientes\n6 - Relatório por médico\n7 - Salvar dados\n8 - Carregar dados\n0 - Sair\n\nEscolha uma opção: > ";
@@ -27,7 +27,7 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             break;
         case 2:
             ChamarProximo();
-            break;
+            break;                                                                                                                                                          
         case 3:
             VisualizarFila();
             break;
@@ -38,7 +38,7 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             ListarPacientes();
             break;
         case 6:
-            //Relatorio por medico
+            relatorio();
             break;
         case 7:
             //Salvar dados

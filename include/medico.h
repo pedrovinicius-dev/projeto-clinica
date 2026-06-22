@@ -6,5 +6,5 @@
 
 std::string NomeMedico(int opcao);
 int NumeroSala(int OpcaoMedico);
-
+void relatorio();
 #endif

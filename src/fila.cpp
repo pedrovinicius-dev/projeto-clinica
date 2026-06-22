@@ -56,6 +56,8 @@ void ChamarProximo() // função do caso 2 que chama o proximo paciente para ser
     {
         if (FilaPrioritaria.empty())
         { // se a prioritaria estiver vazia ele chama da normal
+            FilaEspera[0].Laudo = rand()%2;
+            atendidos.push_back(FilaEspera[0]);
             cout << "PACIENTE: " << FilaEspera[0].Nome << endl
                  << endl;
             cout << "MEDICO: " << NomeMedico(FilaEspera[0].OpcaoMedico) << endl
@@ -63,12 +65,15 @@ void ChamarProximo() // função do caso 2 que chama o proximo paciente para ser
             cout << "SALA: " << NumeroSala(FilaEspera[0].OpcaoMedico);
             FilaEspera.erase(FilaEspera.begin());
         }
+
         else
         {
             // fica armazenado no vetor filaespera, o nome do paciente, do medico e a sala,na posição 0 sera o proximo
             // a ser atendido
 
             // se tiver alguem na prioritaria ele chama primeiro todos da prioritaria depois todos da normal
+            FilaPrioritaria[0].Laudo = rand()%2;
+            atendidos.push_back(FilaPrioritaria[0]);
             cout << "PACIENTE: " << FilaPrioritaria[0].Nome << endl
                  << endl; // imprime o nome do paciente que esta sendo chamado
             cout << "MEDICO: " << NomeMedico(FilaPrioritaria[0].OpcaoMedico) << endl
