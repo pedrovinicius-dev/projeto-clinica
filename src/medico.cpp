@@ -2,10 +2,9 @@
 #include "paciente.h"
 #include <string>
 
-
 using namespace std;
-vector<Paciente>atendidos;
-string NomeMedico(int opcao) //Função que retorna uma opcao int em nome do médico
+vector<Paciente> atendidos;
+string NomeMedico(int opcao) // Função que retorna uma opcao int em nome do médico
 {
     switch (opcao)
     {
@@ -21,8 +20,8 @@ string NomeMedico(int opcao) //Função que retorna uma opcao int em nome do mé
         return "Médico não encontrado";
     }
 }
-//Ambas as funçoes vao saber qual tem que ser, a partir da variavel da OpcaoMedico da struct Paciente
-int NumeroSala(int opcao) //Função para a escolha da sala
+// Ambas as funçoes vao saber qual tem que ser, a partir da variavel da OpcaoMedico da struct Paciente
+int NumeroSala(int opcao) // Função para a escolha da sala
 {
     switch (opcao)
     {
@@ -39,9 +38,10 @@ int NumeroSala(int opcao) //Função para a escolha da sala
     }
 }
 
-void relatorio(){
+void relatorio()
+{
 
-string medico;
+    string medico;
     cout << "\n==============================\n\t  RELATÓRIOS\n==============================\n\n";
 if(!atendidos.empty()){//se a lista de pacientes não estiver vazia, faça
 for(int i=0;i<atendidos.size();i++){//percorrer vector de pacientes atendidos
