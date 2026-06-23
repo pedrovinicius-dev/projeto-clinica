@@ -11,7 +11,7 @@
 using namespace std;
 
 // Declaração das funções de persistência
-void salvarAtendidos(const vector<Paciente>& atendidos);
-void carregarAtendidos(vector<Paciente>& atendidos);
+void salvarPacientes(const vector<Paciente>& atendidos);
+void carregarPacientes(vector<Paciente>& atendidos);
 
 #endif

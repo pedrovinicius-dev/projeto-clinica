@@ -3,6 +3,7 @@
 #include "Fila.h"
 #include "busca.h"
 #include "Medico.h"
+#include "arquivo.h"
 using namespace std;
 
 void IniciarClinicaEAJ() //função para iniciar o projeto na main
@@ -41,10 +42,10 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             relatorio();
             break;
         case 7:
-            //Salvar dados
+            salvarPacientes(atendidos);
             break;
         case 8:
-            //Carregar dados
+            carregarPacientes(atendidos);
             break;
         case 0:
             char confirmação;
