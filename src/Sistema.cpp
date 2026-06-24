@@ -42,10 +42,16 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             relatorio();
             break;
         case 7:
-            salvarPacientes(atendidos);
+            salvarAtendidos(atendidos);
+            salvarListaGeral(ListaGeral);
+            salvarFilaEspera(FilaEspera);
+            salvarFilaPrioritaria(FilaPrioritaria);
             break;
         case 8:
-            carregarPacientes(atendidos);
+            carregarAtendidos(atendidos);
+            CarregarListaGeral(ListaGeral);
+            CarregarFilaEspera(FilaEspera);
+            CarregarFilaPrioritaria(FilaPrioritaria);
             break;
         case 0:
             char confirmação;
