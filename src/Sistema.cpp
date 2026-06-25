@@ -6,20 +6,22 @@
 #include "arquivo.h"
 using namespace std;
 
-void IniciarClinicaEAJ() //função para iniciar o projeto na main
+void IniciarClinicaEAJ() // função para iniciar o projeto na main
 {
-    setlocale(LC_ALL, "pt_BR.UTF-8"); //Usar acentuação
+    setlocale(LC_ALL, "pt_BR.UTF-8"); // Usar acentuação
 
     int opcao;
-    bool sair = false; //O loop do menu depende dessa variavel q se inicia sendo false
+    bool sair = false; // O loop do menu depende dessa variavel q se inicia sendo false
     do
     {
         cout << "\n==============================\n\tCLÍNICA EAJ\n==============================\n\n1 - Cadastrar paciente\n2 - Chamar próximo paciente\n3 - Visualizar fila\n4 - Pesquisar paciente\n5 - Listar pacientes\n6 - Relatório por médico\n7 - Salvar dados\n8 - Carregar dados\n0 - Sair\n\nEscolha uma opção: > ";
 
         cin >> opcao;
-        if (cin.fail()) { 
-        cin.clear();  cin.ignore(10000, '\n'); // <-- AS DUAS LINHAS MILAGROSAS
-        opcao =-1;
+        if (cin.fail()) // fail() verifica se houve erro na leitura, false se deu certo, true se deu erro
+        {
+            cin.clear();             // Limpa o erro e permite nova leitura
+            cin.ignore(10000, '\n'); // Mesmo limpando o erro os caracters inválidos ainda continuam no buffer
+            opcao = -1;              //-1 serve para entrar no default do switch
         }
         switch (opcao)
         {
@@ -28,7 +30,7 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             break;
         case 2:
             ChamarProximo();
-            break;                                                                                                                                                          
+            break;
         case 3:
             VisualizarFila();
             break;
@@ -57,7 +59,7 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             char confirmação;
             cout << "\nTem certeza que deseja sair? (s/n): ";
             cin >> confirmação;
-            if (confirmação == 'S' || confirmação == 's') //se o usuario digitar sim a variavel e true 
+            if (confirmação == 'S' || confirmação == 's') // se o usuario digitar sim a variavel e true
             {
                 sair = true;
             }
@@ -71,7 +73,6 @@ void IniciarClinicaEAJ() //função para iniciar o projeto na main
             cout << "\nDigite uma opção valida!\nTente novamente...";
             break;
         }
-    } while (!sair); //e sendo true vai encerrar o loop
-        cout << "Encerrando o sistema...\nObrigado por utilizar a Clinica EAJ.\n\nProjeto desenvolvido por: Andinho & Vini7";
-    
+    } while (!sair); // e sendo true vai encerrar o loop
+    cout << "Encerrando o sistema...\nObrigado por utilizar a Clinica EAJ.\n\nProjeto desenvolvido por: Andinho & Vini7";
 }

@@ -10,5 +10,4 @@
 
 void IniciarClinicaEAJ();
 
-
 #endif

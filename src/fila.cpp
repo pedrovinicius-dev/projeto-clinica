@@ -55,10 +55,10 @@ void ChamarProximo() // função do caso 2 que chama o proximo paciente para ser
     else
     {
         if (FilaPrioritaria.empty())
-        { // se a prioritaria estiver vazia ele chama da normal
-            FilaEspera[0].Laudo = rand()%2;//geração de valor aleatorio para gerar o relatorio 0 e 1, o "laudo" ira receber esse valor
-            atendidos.push_back(FilaEspera[0]);//todas as informações do paciente da fila de espera serão agora atribuidos ao vector atendidos, ou seja, o paciente
-                                               //sai da fila de espera e entra no "atendidos"
+        {                                       // se a prioritaria estiver vazia ele chama da normal
+            FilaEspera[0].Laudo = rand() % 2;   // geração de valor aleatorio para gerar o relatorio 0 e 1, o "laudo" ira receber esse valor
+            atendidos.push_back(FilaEspera[0]); // todas as informações do paciente da fila de espera serão agora atribuidos ao vector atendidos, ou seja, o paciente
+                                                // sai da fila de espera e entra no "atendidos"
             cout << "PACIENTE: " << FilaEspera[0].Nome << endl
                  << endl;
             cout << "MEDICO: " << NomeMedico(FilaEspera[0].OpcaoMedico) << endl
@@ -73,9 +73,9 @@ void ChamarProximo() // função do caso 2 que chama o proximo paciente para ser
             // a ser atendido
 
             // se tiver alguem na prioritaria ele chama primeiro todos da prioritaria depois todos da normal
-            FilaPrioritaria[0].Laudo = rand()%2;//geração de valor aleatorio para gerar o relatorio 0 e 1, o "laudo" ira receber esse valor
-            atendidos.push_back(FilaPrioritaria[0]);//todas as informações do paciente da fila prioritaria serão agora atribuidos ao vector atendidos, ou seja, o paciente
-                                                    //sai da fila prioritaria e entra no "atendidos"
+            FilaPrioritaria[0].Laudo = rand() % 2;   // geração de valor aleatorio para gerar o relatorio 0 e 1, o "laudo" ira receber esse valor
+            atendidos.push_back(FilaPrioritaria[0]); // todas as informações do paciente da fila prioritaria serão agora atribuidos ao vector atendidos, ou seja, o paciente
+                                                     // sai da fila prioritaria e entra no "atendidos"
             cout << "PACIENTE: " << FilaPrioritaria[0].Nome << endl
                  << endl; // imprime o nome do paciente que esta sendo chamado
             cout << "MEDICO: " << NomeMedico(FilaPrioritaria[0].OpcaoMedico) << endl

@@ -17,8 +17,8 @@ void CadastrarPaciente()   // Função de cadastrar paciente para o caso 1
   cout << "Idade do paciente: ";
   cin >> CadastroPaciente.Idade; // Ler idade e adiciona na struct
 
-  PerguntarMedico(); //pós cadastro de nome e idade vai entrar nessa função
-  PerguntarPrioridade(); //pós escolha do medico entrará nessa função
+  PerguntarMedico();     // pós cadastro de nome e idade vai entrar nessa função
+  PerguntarPrioridade(); // pós escolha do medico entrará nessa função
 
   cout << "\n\nPaciente cadastrado com sucesso!\n";
 }
@@ -55,7 +55,7 @@ void PerguntarPrioridade()
   {
     CadastroPaciente.Paciente_prioritario = true;
     FilaPrioritaria.push_back(CadastroPaciente); // Vai colocar o paciente prioritario no inicio da fila(begin)
-  //erro aqui, quem for prioritario fura fila, mesmo dos prioritarios
+    // erro aqui, quem for prioritario fura fila, mesmo dos prioritarios
   }
   if (opcao == 2)
   {
@@ -63,5 +63,5 @@ void PerguntarPrioridade()
     FilaEspera.push_back(CadastroPaciente); // Vai colocar na fila normal
   }
   ListaGeral.push_back(CadastroPaciente); // Adiciona o paciente cadastrado no vetor lista de pacientes geral
-  return; // Vai retornar para a função de cadastrar paciente
+  return;                                 // Vai retornar para a função de cadastrar paciente
 }
