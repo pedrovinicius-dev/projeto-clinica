@@ -56,10 +56,10 @@ void IniciarClinicaEAJ() // função para iniciar o projeto na main
             CarregarFilaPrioritaria(FilaPrioritaria);
             break;
         case 0:
-            char confirmação;
+            char confirmacao;
             cout << "\nTem certeza que deseja sair? (s/n): ";
-            cin >> confirmação;
-            if (confirmação == 'S' || confirmação == 's') // se o usuario digitar sim a variavel e true
+            cin >> confirmacao;
+            if (confirmacao == 'S' || confirmacao == 's') // se o usuario digitar sim a variavel e true
             {
                 sair = true;
             }
