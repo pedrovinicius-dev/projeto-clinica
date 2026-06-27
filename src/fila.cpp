@@ -3,7 +3,7 @@
 #include "Medico.h"
 using namespace std;
 
-void VisualizarFila() // funçaõ do caso 3 que mostra a fila de espera atual
+void VisualizarFila() 
 {
     cout << "\n==============================\n\tFILA DE ESPERA\n==============================\n\n";
 
@@ -43,11 +43,10 @@ void VisualizarFila() // funçaõ do caso 3 que mostra a fila de espera atual
     }
 }
 
-void ChamarProximo() // função do caso 2 que chama o proximo paciente para ser atendido
-                     //  e remove o da lista de espera
+void ChamarProximo() 
 {
     cout << "\n==============================\n\tPAINEL DE CHAMADA\n==============================\n\n";
-    if (FilaEspera.empty() && FilaPrioritaria.empty()) // Verifica se o vetor está vazio
+    if (FilaEspera.empty() && FilaPrioritaria.empty())
     {
         cout << "Não há pacientes aguardando.\n";
         return; // Retorna para função de inicio

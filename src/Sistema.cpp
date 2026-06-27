@@ -17,11 +17,11 @@ void IniciarClinicaEAJ() // função para iniciar o projeto na main
         cout << "\n==============================\n\tCLÍNICA EAJ\n==============================\n\n1 - Cadastrar paciente\n2 - Chamar próximo paciente\n3 - Visualizar fila\n4 - Pesquisar paciente\n5 - Listar pacientes\n6 - Relatório por médico\n7 - Salvar dados\n8 - Carregar dados\n0 - Sair\n\nEscolha uma opção: > ";
 
         cin >> opcao;
-        if (cin.fail()) // fail() verifica se houve erro na leitura, false se deu certo, true se deu erro
+        if (cin.fail()) // Bloco para verificar se teve erro na leitura, limpar erro, ignorar buffer e entrar no default
         {
-            cin.clear();             // Limpa o erro e permite nova leitura
-            cin.ignore(10000, '\n'); // Mesmo limpando o erro os caracters inválidos ainda continuam no buffer
-            opcao = -1;              //-1 serve para entrar no default do switch
+            cin.clear();             
+            cin.ignore(10000, '\n'); 
+            opcao = -1;              
         }
         switch (opcao)
         {

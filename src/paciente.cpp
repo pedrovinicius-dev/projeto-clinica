@@ -6,13 +6,13 @@ vector<Paciente> FilaEspera;
 vector<Paciente> FilaPrioritaria;
 
 Paciente CadastroPaciente; // Struct Cadastro Paciente, "Paciente" é como se fosse o tipo da variavel e "cadastropaciente"seria a variavel
-void CadastrarPaciente()   // Função de cadastrar paciente para o caso 1
+void CadastrarPaciente()   // caso 1
 {
   int opcao;
 
   cout << "\n==============================\n\tCADASTRO DE PACIENTE\n==============================\n\n";
   cout << "Nome completo: ";
-  cin.ignore();                        // ignora caracter do buffer
+  cin.ignore();                        // ignora buffer
   getline(cin, CadastroPaciente.Nome); // ler nome e adiciona na struct
   cout << "Idade do paciente: ";
   cin >> CadastroPaciente.Idade; // Ler idade e adiciona na struct
@@ -54,8 +54,7 @@ void PerguntarPrioridade()
   if (opcao == 1)
   {
     CadastroPaciente.Paciente_prioritario = true;
-    FilaPrioritaria.push_back(CadastroPaciente); // Vai colocar o paciente prioritario no inicio da fila(begin)
-    // erro aqui, quem for prioritario fura fila, mesmo dos prioritarios
+    FilaPrioritaria.push_back(CadastroPaciente); 
   }
   if (opcao == 2)
   {

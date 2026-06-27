@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// Caminho relativo apontando para a pasta que está na imagem
+// Caminho relativo apontando para a pasta que está na imagem //Auxilio IA
 const string CAMINHO_ATENDIDOS = "dados/atendidos.txt";
 const string CAMINHO_GERAL = "dados/listageral.txt";
 const string CAMINHO_FILAESPERA = "dados/filaespera.txt";

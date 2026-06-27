@@ -46,8 +46,8 @@ void relatorio()
     if (!atendidos.empty())
     { // se a lista de pacientes não estiver vazia, faça
         for (int i = 0; i < atendidos.size(); i++)
-        {                                                                              // percorrer vector de pacientes atendidos
-            cout << "PACIENTE " << i + 1 << ": \nNome: " << atendidos[i].Nome << "\n"; // imprimir nome do paciente
+        {                                                                              
+            cout << "PACIENTE " << i + 1 << ": \nNome: " << atendidos[i].Nome << "\n"; 
             int aleatorio = atendidos[i].Laudo;                                        // valor aleatório para gerar relatório, o "laudo" esta na struct paciente e é um inteiro, ele será ou 0 ou 1, caso seja 0
                                                 // quer dizer que o relatório é ruim, caso seja diferente de 0, o relatório é bom, isso esta sendo definido com o "rand" na função chamar paciente
             switch (atendidos[i].OpcaoMedico)
