@@ -8,16 +8,14 @@
 #include <vector>
 #include "paciente.h"
 
-using namespace std;
-
 // Declaração das funções de persistência
-void salvarAtendidos(const vector<Paciente> &atendidos);
-void carregarAtendidos(vector<Paciente> &atendidos);
-void salvarListaGeral(const vector<Paciente> &ListaGeral);
-void CarregarListaGeral(vector<Paciente> &ListaGeral);
-void salvarFilaEspera(const vector<Paciente> &FilaEspera);
-void CarregarFilaEspera(vector<Paciente> &FilaEspera);
-void salvarFilaPrioritaria(const vector<Paciente> &FilaPrioritaria);
-void CarregarFilaPrioritaria(vector<Paciente> &FilaPrioritaria);
+void salvarAtendidos(const std::vector<Paciente> &atendidos);
+void carregarAtendidos(std::vector<Paciente> &atendidos);
+void salvarListaGeral(const std::vector<Paciente> &ListaGeral);
+void CarregarListaGeral(std::vector<Paciente> &ListaGeral);
+void salvarFilaEspera(const std::vector<Paciente> &FilaEspera);
+void CarregarFilaEspera(std::vector<Paciente> &FilaEspera);
+void salvarFilaPrioritaria(const std::vector<Paciente> &FilaPrioritaria);
+void CarregarFilaPrioritaria(std::vector<Paciente> &FilaPrioritaria);
 
 #endif

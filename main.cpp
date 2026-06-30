@@ -1,8 +1,8 @@
+#include <windows.h>
 #include "Sistema.h"
 #include <locale.h>
 #include <ctime>
 #include <cstdlib>
-#include <windows.h>
 
 using namespace std;
 
